@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estreno Jujutsu Kaisen: Execution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- BOOTSTRAP 4 CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand font-weight-bold" href="#">
+      Jujutsu Kaisen: Execution
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Elenco</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Entradas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-top: 80px;"></div>
+
+<!-- HERO -->
+<section class="py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <h1 class="display-4 font-weight-bold">
+          ¡Estreno de Jujutsu Kaisen: Execution!
+        </h1>
+
+        <p class="lead">
+          Jujutsu Kaisen: Execution expande el universo de la aclamada saga con una
+          historia intensa y oscura, explorando decisiones pasadas y los límites
+          morales de los hechiceros cuando el equilibrio del mundo comienza a romperse.
+        </p>
+
+        <button
+          class="btn btn-primary btn-lg"
+          data-toggle="modal"
+          data-target="#modalConfirmacion">
+          Comprar Entradas
+        </button>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img
+          src="img/poster.jpg"
+          class="img-fluid rounded"
+          alt="Jujutsu Kaisen Execution"
+          data-toggle="tooltip"
+          title="¡Cupos limitados!">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Personajes Principales</h2>
+
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/itadori.png" class="card-img-top" alt="Yuji Itadori">
+          <div class="card-body">
+            <h5 class="card-title">Yuji Itadori</h5>
+            <p class="card-text">
+              Estudiante de Jujutsu con una fuerza física extraordinaria. Al convertirse
+              en el recipiente de Sukuna, lucha entre la oscuridad y su deseo de salvar vidas.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/megumi.png" class="card-img-top" alt="Megumi Fushiguro">
+          <div class="card-body">
+            <h5 class="card-title">Megumi Fushiguro</h5>
+            <p class="card-text">
+              Hechicero serio y estratégico, heredero de la Técnica de las Diez Sombras.
+              Destaca por su inteligencia y su constante conflicto interno.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/yuta.png" class="card-img-top" alt="Yuta Okkotsu">
+          <div class="card-body">
+            <h5 class="card-title">Yuta Okkotsu</h5>
+            <p class="card-text">
+              Uno de los hechiceros más poderosos de su generación. Portador de una enorme
+              energía maldita y acompañado por el espíritu de Rika.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Suscríbete a las novedades</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <form>
+          <div class="form-group">
+            <label>Correo Electrónico</label>
+            <input type="email" class="form-control" placeholder="tu@email.com">
+          </div>
+
+          <div class="text-center">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-toggle="modal"
+              data-target="#modalConfirmacion">
+              Enviar
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal fade" id="modalConfirmacion" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmación</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        ¿Estás seguro que deseas confirmar tu compra?
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button class="btn btn-primary">Confirmar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- JS BOOTSTRAP 4 -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+</body>
+</html>
